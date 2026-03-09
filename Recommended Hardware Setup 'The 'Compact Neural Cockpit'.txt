@@ -1,0 +1,15 @@
+# Recommended Hardware Setup: The "Compact Neural Cockpit"
+
+### Core Machine: Minisforum UM890 Pro (or equivalent)
+* **Processor:** AMD Ryzen 9 8945HS (Hawk Point)
+* **NPU:** Integrated XDNA (16 TOPS) for non-embedded reasoning.
+* **Connectivity:** Dual USB4 40Gbps Ports.
+
+### Display: 15.6" Portable Monitor (USB-C DP Alt Mode)
+* **Single-Cable Integration:** Uses USB4/TB4 cable for both Video and Power (15W draw).
+* **Placement:** Ideal for small-footprint desks where a 27" monitor is impractical.
+
+### Optimization Steps
+1. **BIOS:** Enable 'Auto' for NPU/IPU to allow the [CORE-INTENT] reflex-layer to function.
+2. **Memory:** Assign at least 8GB of VRAM (UMA) to the 780M iGPU for local Vision/OCR tasks.
+3. **Audio:** Connect mic/speakers via the monitor's 3.5mm jack to centralize the "Sage Voice" loop.
