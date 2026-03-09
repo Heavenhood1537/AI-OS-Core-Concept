@@ -1,0 +1,23 @@
+{
+  "identity": {
+    "agent_name": "{YOUR_NAME_HERE}",
+    "voice_profile": "default_neutral",
+    "wittiness_level": 0.5
+  },
+  "context_paths": {
+    "primary_diary": "./data/diary.txt",
+    "creative_muses": "./data/projects/",
+    "memory_store": "./synapse_zone/"
+  },
+  "safety_directives": {
+    "filter_name": "Primary_Guardian",
+    "critical_keywords": ["medical", "fatigue", "urgent"],
+    "low_impact_threshold_hours": [22, 6],
+    "proactive_rest_reminders": true
+  },
+  "hardware_acceleration": {
+    "use_npu": true,
+    "model_path_fast": "qwen2.5:1.5b",
+    "model_path_deep": "qwen2.5:7b"
+  }
+}
